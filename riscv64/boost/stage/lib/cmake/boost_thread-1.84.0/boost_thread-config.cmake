@@ -15,10 +15,10 @@ mark_as_advanced(boost_thread_DIR)
 get_filename_component(_BOOST_CMAKEDIR "${CMAKE_CURRENT_LIST_DIR}/../" REALPATH)
 
 # If the computed and the original directories are symlink-equivalent, use original
-if(EXISTS "/root/dev_riscv64/boost/stage/lib/cmake")
-  get_filename_component(_BOOST_CMAKEDIR_ORIGINAL "/root/dev_riscv64/boost/stage/lib/cmake" REALPATH)
+if(EXISTS "/root/openppp2-ubuntu-3rd-environment/riscv64/boost/stage/lib/cmake")
+  get_filename_component(_BOOST_CMAKEDIR_ORIGINAL "/root/openppp2-ubuntu-3rd-environment/riscv64/boost/stage/lib/cmake" REALPATH)
   if(_BOOST_CMAKEDIR STREQUAL _BOOST_CMAKEDIR_ORIGINAL)
-    set(_BOOST_CMAKEDIR "/root/dev_riscv64/boost/stage/lib/cmake")
+    set(_BOOST_CMAKEDIR "/root/openppp2-ubuntu-3rd-environment/riscv64/boost/stage/lib/cmake")
   endif()
   unset(_BOOST_CMAKEDIR_ORIGINAL)
 endif()
